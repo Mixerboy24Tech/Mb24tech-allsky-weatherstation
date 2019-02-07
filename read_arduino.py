@@ -23,7 +23,7 @@ while True:
  try:
   data = s.readline()
  except SerialException:
-  print "Virhe sarjaportin lukemisessa"
+  print "Error reading serial port"
 # print data
  print year,mon,mday,hour,min,sec,data
  file.write("%s %s %s %s %s %s %s" % (year,mon,mday,hour,min,sec,data))
